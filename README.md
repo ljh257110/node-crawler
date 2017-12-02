@@ -1,12 +1,12 @@
 # 用node实现简单的爬虫及写入文件操作
-##1.初始化项目文件
+### 1.初始化项目文件
 在对应的项目文件夹下执行```npm init```来初始化一个package.json文件
-###2.安装request和cheerio依赖包
+### 2.安装request和cheerio依赖包
 request的功能就是建立起对目标网页的链接，并返回相应的数据<br>
 cheerio的功能是用来操作dom元素的，他可以把request返回来的数据转换成可供dom操作的数据，更重要的cheerio的api跟jquery一样，用$来选取对应的dom结点<br>
 安装request：```cnpm install request --save-dev```<br>
 安装 cheerio：```cnpm install cheerio --save-dev```
-###3.引入依赖包并使用
+### 3.引入依赖包并使用
 （1）新建一个index.js文件
 首先引入依赖
 ```js
