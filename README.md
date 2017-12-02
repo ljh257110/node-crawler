@@ -27,7 +27,7 @@ request('http://www.hengtao.cn/m.php',function(err,result){
 （3）终端运行```node index```,可爬取到页面<br>
 （4）获取页面所有```img```节点,并通过```fs.createWriteStream```写入文件
 ```js
-	var $ = cheerio.load(result.body);//声明全局$,用于DOM操作
+    var $ = cheerio.load(result.body);//声明全局$,用于DOM操作
     $("img").each(function(index,element){//遍历所有img标签
     	var img = "http://www.hengtao.cn" + $(element).attr("src")//获取页面所有图片的完整地址
     	var arr = $(element).attr("src").split("/");
